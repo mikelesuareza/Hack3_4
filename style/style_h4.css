@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400;500;600;700;800&family=Dancing+Script&family=Inter:wght@400;500;600;700;800&family=Open+Sans:wght@800&family=Poppins:wght@200;300&family=Ruda:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: "ruda", sans-serif;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header>span:nth-child(1){
+    padding: 150px 0 50px 0;
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+header>span:nth-child(2){
+    margin-top: -50px;
+    font-size: 250px;
+    font-weight: 800;
+    letter-spacing: 25px;
+    color: #B88940;
+}
+
+
+header>span:nth-child(3){
+    font-size: 120px;
+    font-weight: 800;
+    color: black;
+}
+
+header>span:nth-child(4){
+    margin-top: 35px;
+    font-family: "catamaran", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 5px;
+
+}
+
+main{
+    margin-top: 150px;
+    height: 100vh;
+
+}
+
+.linea{
+    position: absolute;
+    padding-top: 40px;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.linea>div{
+    height: 50px;
+    margin-bottom: 50px;
+    background-color: #FFBD59;
+}
+
+.linea>div:nth-child(1){
+    margin-top: 150px;
+}
+
+.fotos{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+
+.fotos>div{
+    height: 600px;
+    width: 20%;
+    margin-top: -40px;
+    background-size: cover;
+    background-position: center;
+}
+
+.fotos>div:nth-child(1){
+    background-image: url(/H4_HTML/IMG/1.png);
+}
+.fotos>div:nth-child(2){
+    background-image: url(/H4_HTML/IMG/2.png);
+}
+.fotos>div:nth-child(3){
+    background-image: url(/H4_HTML/IMG/3.png);
+}
+
+.fotos>div:nth-child(n)::after{
+    position: relative;
+    width: 100%;
+    top: 600px;
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "catamaran", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.fotos>div:nth-child(1)::after{
+    content: "lorem . 200$";
+}
+
+.fotos>div:nth-child(2)::after{
+    content: "lorem . 300$";
+}
+
+.fotos>div:nth-child(3)::after{
+    content: "lorem . 400$";
+}
+
+footer{
+    margin: 150px 0 75px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+footer>span:nth-child(1){
+    font-size:60px;
+    font-family: "Open Sans", sans-serif;
+    color:#B88940 ;
+    letter-spacing: 5px;
+
+}
+
+footer>span:nth-child(2){
+    font-size: 40px;
+    font-family: "catamaran", sans-serif;
+    font-weight: 600;
+}
